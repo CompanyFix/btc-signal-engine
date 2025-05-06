@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+ccxt
+streamlit
+flask
+twilio
+openai
+chromadb
+apscheduler
+selenium
