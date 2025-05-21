@@ -1,0 +1,5 @@
+RSI_Column,Label,Count,Avg,Min,Max
+rsi,WIN,1174,39.8,22.81,60.41
+stoch_rsi,WIN,1174,0.33,0.0,1.0
+rsi,LOSS,1207,47.0,24.86,62.74
+stoch_rsi,LOSS,1207,0.49,0.0,1.0
