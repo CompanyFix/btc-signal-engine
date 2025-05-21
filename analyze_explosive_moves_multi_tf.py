@@ -6,7 +6,6 @@ import numpy as np
 import json
 import os
 
-# Define how many candles per timeframe = 1 day
 CANDLES_PER_DAY = {
     "1m": 1440,
     "5m": 288,
@@ -36,8 +35,8 @@ def analyze_moves_for_tf(tf, path, move_threshold=2.0):
         if abs(pct_move) >= move_threshold:
             results.append({
                 "timeframe": tf,
-                "start_time": start_row["timestamp"],
-                "end_time": end_row["timestamp"],
+                "start_time": str(start_row["timestamp"]),
+                "end_time": str(end_row["timestamp"]),
                 "direction": "up" if pct_move > 0 else "down",
                 "move_size": round(pct_move, 2),
                 "start_indicators": {col: start_row[col] for col in indicator_cols if pd.notna(start_row[col])},
